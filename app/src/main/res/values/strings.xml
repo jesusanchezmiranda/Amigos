@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Amigos</string>
+    <string name="descripcion">descripcion</string>
+    <string name="btadd">Añadir</string>
+    <string name="Actualizar">Actualizar</string>
+    <string name="delete">Borrar</string>
+    <string name="Nombre">Nombre</string>
+    <string name="Fecha">Fecha</string>
+</resources>
