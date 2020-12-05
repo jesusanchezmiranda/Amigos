@@ -9,7 +9,6 @@ import androidx.room.Query;
 import androidx.room.Update;
 
 import com.jesus.amigos.model.room.pojo.Contacto;
-import com.jesus.amigos.model.room.pojo.Llamada;
 import com.jesus.amigos.model.room.pojo.LlamadasAmigo;
 
 import java.util.List;

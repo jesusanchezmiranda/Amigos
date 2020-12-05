@@ -16,16 +16,14 @@ public class LlamadasReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        String state = intent.getStringExtra(TelephonyManager.EXTRA_STATE);
 
-        if(state.equals(TelephonyManager.EXTRA_STATE_RINGING)){
-
-            tlf = intent.getStringExtra(TelephonyManager.EXTRA_INCOMING_NUMBER);
-
-        }else if(state.equals(TelephonyManager.EXTRA_STATE_IDLE)){
-
-            repository = new Repository(context);
-            repository.selectIdFromLlamadaEntrante(tlf);
+        if (intent.getAction().equals("android.intent.action.PHONE_STATE")) {
+            String estadoTlf = intent.getStringExtra(TelephonyManager.EXTRA_STATE);
+            if (estadoTlf.equals(TelephonyManager.EXTRA_STATE_RINGING)) {
+                tlf = intent.getStringExtra(TelephonyManager.EXTRA_INCOMING_NUMBER);
+                repository = new Repository(context);
+                repository.selectIdFromLlamadaEntrante(tlf);
+            }
         }
     }
 
