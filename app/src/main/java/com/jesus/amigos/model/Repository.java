@@ -103,7 +103,7 @@ public class Repository {
         });
     }
 
-    public void selectIdFromLlamadaEntrante(String tel){
+    public void insertaLlamada(String tel){
 
         UtilThread.databaseWriteExecutor.execute(new Runnable() {
             @Override

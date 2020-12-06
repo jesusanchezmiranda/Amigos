@@ -22,7 +22,7 @@ public class LlamadasReceiver extends BroadcastReceiver {
             if (estadoTlf.equals(TelephonyManager.EXTRA_STATE_RINGING)) {
                 tlf = intent.getStringExtra(TelephonyManager.EXTRA_INCOMING_NUMBER);
                 repository = new Repository(context);
-                repository.selectIdFromLlamadaEntrante(tlf);
+                repository.insertaLlamada(tlf);
             }
         }
     }

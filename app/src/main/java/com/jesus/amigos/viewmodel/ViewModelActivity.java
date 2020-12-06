@@ -59,7 +59,7 @@ public class ViewModelActivity extends AndroidViewModel {
     }
 
     public void selectIdFromLlamadaEntrante(String tel) {
-        repository.selectIdFromLlamadaEntrante(tel);
+        repository.insertaLlamada(tel);
     }
 
     public LiveData<List<Llamada>> getLiveListaLlamadas() {
