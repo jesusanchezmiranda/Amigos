@@ -13,10 +13,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Amigos">
-        <activity android:name=".view.InfoAmigos"></activity>
-        <activity android:name=".view.MostrarLlamadas" />
-        <activity android:name=".view.InfoContactos" />
-        <activity android:name=".view.ListaContactosTelefono" />
+        <activity android:name=".view.InfoAmigos">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.MainActivity" />
+
+        </activity>
+        <activity android:name=".view.MostrarLlamadas" >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.MainActivity" />
+
+        </activity>
+        <activity android:name=".view.InfoContactos" >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.ListaContactosTelefono" />
+
+        </activity>
+        <activity android:name=".view.ListaContactosTelefono" >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.MainActivity" />
+
+        </activity>
         <activity android:name=".view.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

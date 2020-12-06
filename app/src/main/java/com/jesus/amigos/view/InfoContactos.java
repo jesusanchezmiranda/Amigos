@@ -29,6 +29,7 @@ public class InfoContactos extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info_contactos);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         init();
     }
 

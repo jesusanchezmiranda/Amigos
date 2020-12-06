@@ -12,7 +12,7 @@ public class LlamadasReceiver extends BroadcastReceiver {
 
     private Llamada llamada;
     private Repository repository;
-    private static String tlf;
+    private String tlf;
 
     @Override
     public void onReceive(Context context, Intent intent) {
